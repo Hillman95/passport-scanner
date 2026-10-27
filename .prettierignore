@@ -1,0 +1,10 @@
+node_modules
+dist
+examples/ocr
+vendor/mrz/*.gz
+licenses
+package-lock.json
+docs/dependency-licenses.json
+test-results
+playwright-report
+.local

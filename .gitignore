@@ -1,0 +1,12 @@
+node_modules/
+dist/
+examples/ocr/
+.local/
+.env
+.env.*
+*.log
+*.tgz
+*.tsbuildinfo
+test-results/
+playwright-report/
+.DS_Store
