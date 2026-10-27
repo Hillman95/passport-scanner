@@ -1,7 +1,7 @@
 {
   "name": "@hillman95/passport-scanner",
-  "version": "0.1.0",
-  "description": "Local browser passport OCR with Latin/Cyrillic fields, MRZ checks and HEIC decoding",
+  "version": "0.1.1",
+  "description": "Browser-local passport OCR with automatic deskewing, cropping and contrast enhancement for difficult photos",
   "type": "module",
   "license": "MIT",
   "repository": {
@@ -103,5 +103,9 @@
     "typescript-eslint": "8.64.0",
     "vite": "8.3.5",
     "vitest": "5.0.5"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
   }
 }

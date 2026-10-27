@@ -85,10 +85,10 @@ try {
       { cwd: root, encoding: "utf8" },
     ),
   )[0];
-  if (
-    packed.name !== "@hillman95/passport-scanner" ||
-    packed.version !== "0.1.0"
-  )
+  const expected = JSON.parse(
+    await readFile(new URL("../package.json", import.meta.url), "utf8"),
+  );
+  if (packed.name !== expected.name || packed.version !== expected.version)
     throw new Error("Unexpected packed package identity");
   const archive = join(temporary, packed.filename);
   for (const file of packed.files) {

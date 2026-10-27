@@ -1,6 +1,6 @@
 # Passport Scanner
 
-Local passport OCR for modern browsers. Reads Latin passport names, printed Cyrillic names when visible, document number, birth/issue/expiry dates and sex. Validates TD3 MRZ check digits and returns candidates for **human review**.
+Local passport OCR for modern browsers, including difficult photographs. Automatically crops excess background, straightens tilted pages, improves contrast and rereads enlarged field crops. Reads Latin passport names, printed Cyrillic names when visible, document number, birth/issue/expiry dates and sex. Validates TD3 MRZ check digits and returns candidates for **human review**.
 
 - JPEG, PNG, WebP and HEIC/HEIF; EXIF orientation, page cropping, deskewing and extra passes for difficult photos.
 - Browser workers with self-hosted, pinned Tesseract/WASM models. No cloud OCR, API keys, telemetry or document uploads.
@@ -12,7 +12,7 @@ Local passport OCR for modern browsers. Reads Latin passport names, printed Cyri
 The package is distributed through GitHub Releases; it is not published to the npm registry.
 
 ```sh
-npm install https://github.com/Hillman95/passport-scanner/releases/download/v0.1.0/hillman95-passport-scanner-0.1.0.tgz
+npm install https://github.com/Hillman95/passport-scanner/releases/download/v0.1.1/hillman95-passport-scanner-0.1.1.tgz
 npx passport-scanner-assets public/ocr
 ```
 
